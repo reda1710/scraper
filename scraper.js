@@ -13,7 +13,7 @@ function formatDate(date) {
 
 // Function to scrape and send data
 async function scrapeAndSendData() {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     const combinedData = { current_day: {}};
 
